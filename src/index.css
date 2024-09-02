@@ -85,7 +85,7 @@
   }
 
   .app__navbar-logo img {
-    @apply w-[90px] h-[20px];
+    @apply w-[30px] h-[30px];
   }
 
   .app__navbar-links {
@@ -166,12 +166,6 @@
 
     .copyright {
       padding: 2rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .app__navbar-logo img {
-      @apply w-[180px] h-[40px];
     }
   }
 
