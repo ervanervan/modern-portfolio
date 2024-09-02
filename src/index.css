@@ -124,9 +124,8 @@
     }
 
     div {
-      @apply fixed top-0 bottom-0 right-0 z-50 p-4 w-full sm:w-[50%] h-screen flex flex-col justify-end items-end bg-cover bg-repeat bg-white shadow-lg;
-
-      svg {
+      @apply fixed top-0 bottom-0 right-0 z-50 p-4 w-full sm:w-[50%] h-screen flex flex-col justify-end items-end bg bg-cover bg-repeat bg-white shadow-lg;
+      s svg {
         @apply w-[35px] h-[35px] text-secondary m-2;
       }
 
