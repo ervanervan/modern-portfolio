@@ -124,7 +124,7 @@
     }
 
     div {
-      @apply fixed top-0 bottom-0 right-0 z-50 p-4 w-[80%] h-screen flex flex-col justify-end items-end bg-cover bg-repeat bg-white shadow-lg;
+      @apply fixed top-0 bottom-0 right-0 z-50 p-4 w-[50%] h-screen flex flex-col justify-end items-end bg-cover bg-repeat bg-white shadow-lg;
 
       svg {
         @apply w-[35px] h-[35px] text-secondary m-2;
@@ -137,17 +137,9 @@
           @apply m-4;
 
           a {
-            @apply text-gray uppercase font-medium text-lg transition-all duration-300 ease-in-out;
-
-            &:hover {
-              @apply text-secondary;
-            }
+            @apply text-gray uppercase font-medium text-lg transition-all duration-300 ease-in-out hover:text-secondary;
           }
         }
-      }
-
-      @media (min-width: 900px) {
-        display: none;
       }
     }
 
