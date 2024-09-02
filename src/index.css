@@ -95,19 +95,11 @@
       @apply mx-4 cursor-pointer flex flex-col;
 
       div {
-        @apply w-[5px] h-[5px] bg-transparent rounded-full mb-1;
+        @apply w-[5px] h-[5px] bg-transparent rounded-full mb-1 hover:bg-secondary;
       }
 
       a {
-        @apply text-gray uppercase font-medium transition-all duration-300 ease-in-out;
-
-        &:hover {
-          @apply text-secondary;
-        }
-      }
-
-      &:hover div {
-        @apply bg-secondary;
+        @apply text-gray uppercase font-medium transition-all duration-300 ease-in-out hover:text-secondary;
       }
     }
 
@@ -132,14 +124,14 @@
 
       ul {
         @apply list-none m-0 p-0 w-full h-full flex flex-col justify-start items-start;
+      }
 
-        li {
-          @apply m-4;
+      li {
+        @apply m-4;
+      }
 
-          a {
-            @apply text-gray uppercase font-medium text-lg transition-all duration-300 ease-in-out hover:text-secondary;
-          }
-        }
+      a {
+        @apply text-gray uppercase font-medium text-lg transition-all duration-300 ease-in-out hover:text-secondary;
       }
     }
 
