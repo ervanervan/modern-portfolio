@@ -232,7 +232,7 @@
   }
 
   .app__header-img {
-    @apply flex-1 h-full flex justify-end items-end relative;
+    @apply flex-1 h-full flex justify-end items-end relative xl:my-8;
 
     img {
       @apply w-full object-contain z-10;
@@ -241,8 +241,6 @@
     .overlay_circle {
       @apply absolute inset-x-0 bottom-0 z-0 w-full h-[90%];
     }
-
-    @apply xl:my-8;
   }
   /* Header */
 }
