@@ -158,7 +158,133 @@
   /* Navbar */
 
   /* Header */
+  #home {
+    @apply relative bg-cover bg-center bg-repeat;
+    background-image: url("../../assets/bgIMG.png");
 
+    .app__wrapper {
+      @apply p-0;
+
+      .copyright {
+        @apply hidden;
+      }
+    }
+  }
+
+  .app__header {
+    @apply flex w-full h-full flex-row pt-24 px-8 pb-0;
+
+    @screen 2xl {
+      @apply pt-32;
+    }
+
+    @screen xl {
+      @apply flex-col;
+    }
+
+    @screen sm {
+      @apply pt-24 px-4 pb-8;
+    }
+  }
+
+  .app__header-info {
+    @apply flex-[0.65] flex flex-col justify-start items-start h-full mx-8;
+
+    @screen xl {
+      @apply w-full mr-0;
+    }
+  }
+
+  .app__header-badge {
+    @apply w-full flex flex-col justify-end items-end;
+
+    .badge-cmp,
+    .tag-cmp {
+      @apply p-4 bg-white rounded-lg flex-row w-auto shadow-lg;
+    }
+
+    .tag-cmp {
+      @apply flex-col mt-12;
+
+      p {
+        @apply w-full uppercase text-right;
+      }
+    }
+
+    span {
+      @apply text-4xl;
+
+      @screen 2xl {
+        @apply text-5xl;
+      }
+    }
+
+    @screen xl {
+      @apply justify-start items-start;
+    }
+  }
+
+  .app__header-circles {
+    @apply flex-[0.75] flex flex-col justify-evenly items-start h-full ml-4;
+
+    div {
+      @apply w-24 h-24 rounded-full bg-white shadow-lg;
+
+      img {
+        @apply w-[60%] h-[60%];
+      }
+    }
+
+    div:nth-child(1) {
+      @apply w-24 h-24;
+    }
+
+    div:nth-child(2) {
+      @apply my-7 w-36 h-36;
+    }
+
+    div:nth-child(3) {
+      @apply w-16 h-16;
+    }
+
+    @screen 2xl {
+      div:nth-child(1) {
+        @apply w-48 h-48;
+      }
+
+      div:nth-child(2) {
+        @apply w-[400px] h-[400px];
+      }
+
+      div:nth-child(3) {
+        @apply w-[170px] h-[170px];
+      }
+    }
+
+    @screen xl {
+      @apply w-full flex-row flex-wrap ml-0;
+
+      div {
+        @apply m-4;
+      }
+    }
+  }
+
+  .app__header-img {
+    @apply flex-1 h-full flex justify-end items-end relative;
+
+    img {
+      @apply w-full object-contain z-10;
+    }
+
+    .overlay_circle {
+      @apply absolute inset-x-0 bottom-0 z-0 w-full h-[90%];
+    }
+
+    @screen xl {
+      @apply my-8;
+    }
+  }
   /* Header */
 }
 
