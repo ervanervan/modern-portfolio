@@ -15,7 +15,7 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <section className="app__header app__flex">
+    <section className="app__header app__flex" id="home">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -63,6 +63,7 @@ const Header = () => {
           </div>
         ))}
       </motion.div>
+      <div class="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-b from-transparent to-primary"></div>
     </section>
   );
 };
