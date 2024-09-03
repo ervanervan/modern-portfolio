@@ -42,7 +42,7 @@ const Header = () => {
         className="app__header-img"
       >
         <img src={images.profile} alt="profile_bg" />
-        {/* <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-b z-10 from-transparent to-primary"></div> */}
+        <div class="absolute bottom-0 left-0 w-full h-32 md:h-52 bg-gradient-to-b z-10 from-transparent to-primary"></div>
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
