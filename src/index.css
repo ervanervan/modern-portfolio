@@ -195,9 +195,7 @@
     }
 
     span {
-      @apply text-4xl;
-
-      @apply 2xl:text-5xl;
+      @apply text-4xl 2xl:text-5xl;
     }
 
     @apply xl:justify-start xl:items-start;
