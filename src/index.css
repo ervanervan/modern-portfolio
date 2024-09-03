@@ -175,9 +175,7 @@
   }
 
   .app__header-info {
-    @apply flex-[0.65] flex flex-col justify-start items-start h-full md:mx-8;
-
-    @apply xl:w-full xl:mr-0;
+    @apply flex-[0.65] flex flex-col justify-start items-start h-full md:mx-8 xl:w-full xl:mr-0;
   }
 
   .app__header-badge {
