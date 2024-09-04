@@ -40,7 +40,7 @@
   }
 
   .copyright p {
-    @apply uppercase text-black;
+    @apply text-black/70;
   }
 
   .head-text {
@@ -252,7 +252,7 @@
 
   /* About */
   .app__about {
-    @apply flex flex-col w-full my-10;
+    @apply flex flex-col w-full;
   }
 
   .app__profiles {
