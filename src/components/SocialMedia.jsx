@@ -1,17 +1,18 @@
 import React from "react";
-import { BsTwitter, BsInstagram } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { CgWebsite } from "react-icons/cg";
+import { FaWebAwesome } from "react-icons/fa6";
 
 const SocialMedia = () => (
   <div className="app__social">
-    <div>
-      <BsTwitter />
+    <div className="group">
+      <BsLinkedin className="group-hover:text-white" />
     </div>
-    <div>
-      <FaFacebookF />
+    <div className="group">
+      <BsGithub className="group-hover:text-white" />
     </div>
-    <div>
-      <BsInstagram />
+    <div className="group">
+      <CgWebsite className="group-hover:text-white" />
     </div>
   </div>
 );

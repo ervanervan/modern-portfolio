@@ -32,7 +32,7 @@
   }
 
   .app__wrapper {
-    @apply flex-1 w-full flex flex-col p-16 sm:p-8;
+    @apply flex-1 w-full flex flex-col p-4 sm:p-8;
   }
 
   .copyright {
@@ -60,7 +60,7 @@
   }
 
   .app__social {
-    @apply flex flex-col justify-end items-center p-4;
+    @apply flex flex-col justify-end gap-2 items-center p-4;
   }
 
   .app__social div {
@@ -68,7 +68,7 @@
   }
 
   .app__social div svg {
-    @apply w-4 h-4 text-gray hover:text-white;
+    @apply w-4 h-4 text-gray;
   }
 
   .app__navigation {
@@ -249,6 +249,30 @@
     }
   }
   /* Header */
+
+  /* About */
+  .app__about {
+    @apply flex flex-col w-full my-10;
+  }
+
+  .app__profiles {
+    @apply flex justify-center items-start flex-wrap mt-8;
+  }
+
+  .app__profile-item {
+    @apply w-full sm:w-[190px] flex flex-col justify-start items-start m-6;
+
+    img {
+      @apply w-full sm:h-[190px] rounded-[15px] object-cover;
+    }
+
+    @apply xl:w-[200px] 2xl:w-[350px] 2xl:mx-16;
+
+    img {
+      @apply xl:h-[200px] 2xl:h-[350px];
+    }
+  }
+  /* About */
 }
 
 @layer utilities {
