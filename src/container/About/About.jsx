@@ -6,4 +6,8 @@ const About = () => {
   return <section>About</section>;
 };
 
-export default About;
+export default AppWrap(
+  MotionWrap(About, "app__about"),
+  "about",
+  "app__whitebg"
+);
