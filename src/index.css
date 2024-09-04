@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+}
+
 @layer components {
   .app {
     @apply bg-primary font-dm-sans;
