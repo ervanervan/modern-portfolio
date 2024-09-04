@@ -1,7 +1,11 @@
 import React from "react";
 
 const Work = () => {
-  return <section>Work</section>;
+  return (
+    <section>
+      <div></div>Work
+    </section>
+  );
 };
 
 export default Work;
