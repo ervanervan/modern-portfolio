@@ -143,7 +143,7 @@ const Work = () => {
               <motion.div
                 whileHover={{ opacity: 1 }}
                 initial={{ opacity: 0 }} // Ensure opacity is 0 initially
-                transition={{ duration: 0.25, ease: "easeInOut" }}
+                transition={{ duration: 0.25, ease: "easeInOut" }} // Remove staggerChildren for smoother interaction
                 className="app__work-hover app__flex"
               >
                 <a href={work.projectLink} target="_blank" rel="noreferrer">
