@@ -34,6 +34,58 @@ const Work = () => {
       codeLink: "#",
       tags: ["Mobile App", "All"],
     },
+    {
+      title: "E-commerce Website",
+      description: "An e-commerce platform built with Next.js and TailwindCSS.",
+      imgUrl: "https://via.placeholder.com/270x230.png?text=E-commerce+Website",
+      projectLink: "#",
+      codeLink: "#",
+      tags: ["Web App", "Next.js", "All"],
+    },
+    {
+      title: "Admin Dashboard",
+      description:
+        "A responsive admin dashboard with charting and data visualization.",
+      imgUrl: "https://via.placeholder.com/270x230.png?text=Admin+Dashboard",
+      projectLink: "#",
+      codeLink: "#",
+      tags: ["Web App", "React JS", "All"],
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "A personal portfolio website showcasing projects and skills.",
+      imgUrl: "https://via.placeholder.com/270x230.png?text=Portfolio+Website",
+      projectLink: "#",
+      codeLink: "#",
+      tags: ["Web App", "All"],
+    },
+    {
+      title: "Landing Page Design",
+      description:
+        "A sleek landing page designed with Figma for a marketing campaign.",
+      imgUrl: "https://via.placeholder.com/270x230.png?text=Landing+Page",
+      projectLink: "#",
+      codeLink: "#",
+      tags: ["UI/UX", "All"],
+    },
+    {
+      title: "Social Media App",
+      description: "A social media application built with MERN stack.",
+      imgUrl: "https://via.placeholder.com/270x230.png?text=Social+Media+App",
+      projectLink: "#",
+      codeLink: "#",
+      tags: ["Web App", "React JS", "All"],
+    },
+    {
+      title: "Weather Forecast App",
+      description:
+        "A weather forecast app built with Vue.js and an external API.",
+      imgUrl: "https://via.placeholder.com/270x230.png?text=Weather+App",
+      projectLink: "#",
+      codeLink: "#",
+      tags: ["Web App", "Vue.js", "All"],
+    },
   ];
 
   useEffect(() => {
