@@ -46,7 +46,7 @@ const Work = () => {
     {
       title: "Admin Dashboard",
       description:
-        "A responsive admin dashboard with charting and data visualization.",
+        "A responsive admin dashboard with charting and visualization.",
       imgUrl: images.about01,
       projectLink: "#",
       codeLink: "#",
@@ -63,8 +63,7 @@ const Work = () => {
     },
     {
       title: "Landing Page Design",
-      description:
-        "A sleek landing page designed with Figma for a marketing campaign.",
+      description: "A sleek landing page designed with Figma for a marketing.",
       imgUrl: images.about03,
       projectLink: "#",
       codeLink: "#",
@@ -110,7 +109,7 @@ const Work = () => {
   };
 
   return (
-    <section className="mt-16">
+    <section id="work" className="mt-16 container mx-auto">
       <h2 className="head-text">
         My Creative <span>Portfolio</span> Section
       </h2>

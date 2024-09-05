@@ -32,7 +32,7 @@ const abouts = [
 
 const About = () => {
   return (
-    <section className="mt-16">
+    <section id="about" className="mt-16">
       <h2 className="head-text">
         I Know that <span>Good Design</span> <br />
         means <span>Good Business</span>
