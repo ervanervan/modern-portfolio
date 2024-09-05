@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { AppWrap, MotionWrap } from "../../wrapper";
+import { images } from "../../constants";
 
 const Work = () => {
   const [works, setWorks] = useState([]);
@@ -13,7 +14,7 @@ const Work = () => {
     {
       title: "UI/UX Design",
       description: "A modern UI/UX design for a web application.",
-      imgUrl: "https://via.placeholder.com/270x230.png?text=UI/UX+Design",
+      imgUrl: images.about01,
       projectLink: "#",
       codeLink: "#",
       tags: ["UI/UX", "All"],
@@ -21,7 +22,7 @@ const Work = () => {
     {
       title: "React Web App",
       description: "A web application built with ReactJS.",
-      imgUrl: "https://via.placeholder.com/270x230.png?text=React+Web+App",
+      imgUrl: images.about02,
       projectLink: "#",
       codeLink: "#",
       tags: ["Web App", "React JS", "All"],
@@ -29,7 +30,7 @@ const Work = () => {
     {
       title: "Mobile App",
       description: "A cross-platform mobile app using React Native.",
-      imgUrl: "https://via.placeholder.com/270x230.png?text=Mobile+App",
+      imgUrl: images.about03,
       projectLink: "#",
       codeLink: "#",
       tags: ["Mobile App", "All"],
@@ -37,7 +38,7 @@ const Work = () => {
     {
       title: "E-commerce Website",
       description: "An e-commerce platform built with Next.js and TailwindCSS.",
-      imgUrl: "https://via.placeholder.com/270x230.png?text=E-commerce+Website",
+      imgUrl: images.about04,
       projectLink: "#",
       codeLink: "#",
       tags: ["Web App", "Next.js", "All"],
@@ -46,7 +47,7 @@ const Work = () => {
       title: "Admin Dashboard",
       description:
         "A responsive admin dashboard with charting and data visualization.",
-      imgUrl: "https://via.placeholder.com/270x230.png?text=Admin+Dashboard",
+      imgUrl: images.about01,
       projectLink: "#",
       codeLink: "#",
       tags: ["Web App", "React JS", "All"],
@@ -55,7 +56,7 @@ const Work = () => {
       title: "Portfolio Website",
       description:
         "A personal portfolio website showcasing projects and skills.",
-      imgUrl: "https://via.placeholder.com/270x230.png?text=Portfolio+Website",
+      imgUrl: images.about02,
       projectLink: "#",
       codeLink: "#",
       tags: ["Web App", "All"],
@@ -64,7 +65,7 @@ const Work = () => {
       title: "Landing Page Design",
       description:
         "A sleek landing page designed with Figma for a marketing campaign.",
-      imgUrl: "https://via.placeholder.com/270x230.png?text=Landing+Page",
+      imgUrl: images.about03,
       projectLink: "#",
       codeLink: "#",
       tags: ["UI/UX", "All"],
@@ -72,7 +73,7 @@ const Work = () => {
     {
       title: "Social Media App",
       description: "A social media application built with MERN stack.",
-      imgUrl: "https://via.placeholder.com/270x230.png?text=Social+Media+App",
+      imgUrl: images.about04,
       projectLink: "#",
       codeLink: "#",
       tags: ["Web App", "React JS", "All"],
@@ -81,7 +82,7 @@ const Work = () => {
       title: "Weather Forecast App",
       description:
         "A weather forecast app built with Vue.js and an external API.",
-      imgUrl: "https://via.placeholder.com/270x230.png?text=Weather+App",
+      imgUrl: images.about01,
       projectLink: "#",
       codeLink: "#",
       tags: ["Web App", "Vue.js", "All"],
@@ -115,7 +116,7 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+        {["All", "UI/UX", "Web App", "Mobile App", "React JS"].map(
           (item, index) => (
             <div
               key={index}
@@ -141,18 +142,14 @@ const Work = () => {
               <img src={work.imgUrl} alt={work.title} />
 
               <motion.div
-                whileHover={{ opacity: [0, 1] }}
-                transition={{
-                  duration: 0.25,
-                  ease: "easeInOut",
-                  staggerChildren: 0.5,
-                }}
+                whileHover={{ opacity: 1 }}
+                initial={{ opacity: 0 }} // Ensure opacity is 0 initially
+                transition={{ duration: 0.25, ease: "easeInOut" }} // Remove staggerChildren for smoother interaction
                 className="app__work-hover app__flex"
               >
                 <a href={work.projectLink} target="_blank" rel="noreferrer">
                   <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
+                    whileHover={{ scale: 0.9 }}
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
@@ -161,8 +158,7 @@ const Work = () => {
                 </a>
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
+                    whileHover={{ scale: 0.9 }}
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
