@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { AppWrap, MotionWrap } from "../../wrapper";
@@ -8,6 +8,38 @@ const Work = () => {
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+
+  const dummyData = [
+    {
+      title: "UI/UX Design",
+      description: "A modern UI/UX design for a web application.",
+      imgUrl: "https://via.placeholder.com/270x230.png?text=UI/UX+Design",
+      projectLink: "#",
+      codeLink: "#",
+      tags: ["UI/UX", "All"],
+    },
+    {
+      title: "React Web App",
+      description: "A web application built with ReactJS.",
+      imgUrl: "https://via.placeholder.com/270x230.png?text=React+Web+App",
+      projectLink: "#",
+      codeLink: "#",
+      tags: ["Web App", "React JS", "All"],
+    },
+    {
+      title: "Mobile App",
+      description: "A cross-platform mobile app using React Native.",
+      imgUrl: "https://via.placeholder.com/270x230.png?text=Mobile+App",
+      projectLink: "#",
+      codeLink: "#",
+      tags: ["Mobile App", "All"],
+    },
+  ];
+
+  useEffect(() => {
+    setWorks(dummyData);
+    setFilterWork(dummyData);
+  }, []);
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
@@ -25,7 +57,7 @@ const Work = () => {
   };
 
   return (
-    <section>
+    <section className="mt-16">
       <h2 className="head-text">
         My Creative <span>Portfolio</span> Section
       </h2>
@@ -54,7 +86,7 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              <img src={work.imgUrl} alt={work.title} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
