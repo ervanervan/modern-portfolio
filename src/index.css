@@ -386,11 +386,7 @@
   }
 
   .app__skills-exp {
-    @apply flex flex-1 flex-col justify-start items-start;
-
-    @screen md {
-      @apply mt-8;
-    }
+    @apply flex flex-1 flex-col justify-start items-start md:mt-8;
   }
 
   .app__skills-exp-item {
@@ -414,14 +410,10 @@
   }
 
   .app__skills-exp-year {
-    @apply mr-12;
+    @apply mr-12 sm:mr-4;
 
     p {
       @apply font-extrabold text-secondary;
-    }
-
-    @screen sm {
-      @apply mr-4;
     }
   }
 
