@@ -35,6 +35,24 @@ const skills = [
     bgColor: "#68A063",
     icon: images.node,
   },
+  {
+    id: "6",
+    name: "Sass",
+    bgColor: "#68A063",
+    icon: images.sass,
+  },
+  {
+    id: "7",
+    name: "Git",
+    bgColor: "#68A063",
+    icon: images.git,
+  },
+  {
+    id: "8",
+    name: "Typescript",
+    bgColor: "#68A063",
+    icon: images.typescript,
+  },
 ];
 
 const experiences = [
