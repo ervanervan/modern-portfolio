@@ -2,37 +2,38 @@ import React from "react";
 import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import { images } from "../../constants";
 
 const skills = [
   {
     id: "1",
     name: "HTML",
     bgColor: "#E44D26",
-    icon: "https://path-to-your-icon/html-icon.png",
+    icon: images.html,
   },
   {
     id: "2",
     name: "CSS",
     bgColor: "#1572B6",
-    icon: "https://path-to-your-icon/css-icon.png",
+    icon: images.css,
   },
   {
     id: "3",
     name: "JavaScript",
     bgColor: "#F7DF1E",
-    icon: "https://path-to-your-icon/js-icon.png",
+    icon: images.javascript,
   },
   {
     id: "4",
     name: "React",
     bgColor: "#61DAFB",
-    icon: "https://path-to-your-icon/react-icon.png",
+    icon: images.react,
   },
   {
     id: "5",
     name: "Node.js",
     bgColor: "#68A063",
-    icon: "https://path-to-your-icon/nodejs-icon.png",
+    icon: images.node,
   },
 ];
 
@@ -113,7 +114,6 @@ const Skills = () => {
                 {experience.works.map((work) => (
                   <React.Fragment key={work.id}>
                     {" "}
-                    {/* Using work.id as key */}
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
