@@ -4,7 +4,7 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 
 const Skills = () => {
   return (
-    <section>
+    <section id="skills" className="mt-16">
       <h2 className="head-text">Skills & Experiences</h2>
 
       <div className="app__skills-container">
