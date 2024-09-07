@@ -420,8 +420,76 @@
   .skills-tooltip {
     @apply max-w-xs relative !bg-white shadow-lg rounded-lg p-4 !text-gray text-center leading-6 opacity-100 xl:text-2xl xl:max-w-sm xl:leading-8;
   }
-
   /* Skills */
+
+  /* Testimonial */
+  .app__testimonial {
+    @apply flex flex-col w-full;
+  }
+
+  .app__testimonial-item {
+    @apply w-full lg:w-3/5 min-h-[320px] bg-white flex flex-col lg:flex-row p-8 2xl:p-12 rounded-lg shadow-lg transition-all ease-in-out duration-300;
+
+    img {
+      @apply w-[80px] h-[80px] rounded-full object-cover xl:w-[100px] xl:h-[100px] 2xl:w-[140px] 2xl:h-[140px];
+    }
+  }
+
+  .app__testimonial-content {
+    @apply flex-1 h-full sm:px-8 mt-4 sm:mt-0 p-0 text-left flex flex-col justify-around items-start;
+
+    p {
+      @apply text-base leading-8 text-black xl:text-xl 2xl:text-2xl 2xl:leading-[3.5rem] mt-6 lg:mt-0;
+    }
+
+    h4 {
+      @apply font-semibold text-secondary mt-0 md:mt-8;
+    }
+
+    h5 {
+      @apply font-normal text-gray mt-1;
+    }
+  }
+
+  .app__testimonial-btns {
+    @apply flex-row mt-4;
+
+    div {
+      @apply w-[50px] h-[50px] 2xl:w-[100px] 2xl:h-[100px] rounded-full bg-white m-4 transition-all ease-in-out duration-300 flex items-center justify-center;
+
+      svg {
+        @apply w-5 h-5 2xl:w-[45px] 2xl:h-[45px] text-secondary;
+      }
+
+      &:hover {
+        @apply bg-secondary;
+
+        svg {
+          @apply text-white;
+        }
+      }
+    }
+  }
+
+  .app__testimonial-brands {
+    @apply flex-wrap mt-8 w-full;
+
+    div {
+      @apply m-3 w-[80px] sm:w-[150px] sm:m-6 2xl:w-[210px] xl:m-8;
+
+      img {
+        @apply w-full h-auto object-cover filter grayscale;
+      }
+
+      &:hover {
+        img {
+          @apply filter-none;
+        }
+      }
+    }
+  }
+
+  /* Testimonial */
 }
 
 @layer utilities {
