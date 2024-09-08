@@ -488,8 +488,80 @@
       }
     }
   }
-
   /* Testimonial */
+
+  /* Footer */
+  @layer components {
+    .app__footer {
+      @apply flex flex-1 w-full flex-col; /* Add md breakpoint for row */
+    }
+
+    .app__footer-cards {
+      @apply w-full md:w-3/5 flex justify-evenly items-center flex-wrap my-6 md:my-16 mx-8;
+
+      .app__footer-card {
+        @apply sm:min-w-[290px] flex flex-row justify-start items-center my-4 p-4 rounded-lg cursor-pointer bg-[#fef4f5] transition-all duration-300 ease-in-out;
+
+        img {
+          @apply w-10 h-10 mr-2;
+        }
+
+        p,
+        a {
+          @apply font-medium;
+        }
+
+        a {
+          @apply no-underline;
+        }
+
+        &:hover {
+          @apply shadow-[0_0_25px_#fef4f5];
+        }
+
+        /* Apply responsive design directly */
+        @apply w-full md:w-auto; /* w-full for small screens, auto for larger */
+      }
+
+      .app__footer-card:last-child {
+        @apply bg-[#f2f7fb];
+      }
+
+      .app__footer-card:last-child:hover {
+        @apply shadow-[0_0_25px_#f2f7fb];
+      }
+    }
+
+    .app__footer-form {
+      @apply w-full md:w-3/5 flex flex-col my-4 mx-8;
+
+      div {
+        @apply w-full my-3 rounded-lg cursor-pointer bg-primary transition-all duration-300 ease-in-out;
+
+        input,
+        textarea {
+          @apply w-full p-4 border-none rounded-md bg-primary text-secondary outline-none;
+        }
+
+        textarea {
+          @apply h-44;
+        }
+
+        &:hover {
+          @apply shadow-[0_0_25px_var(--primary-color)];
+        }
+      }
+
+      button {
+        @apply py-4 px-8 rounded-lg border-none bg-secondary font-medium text-white outline-none mt-8 transition duration-[cubic-bezier(0.55,0.085,0.68,0.53)] cursor-pointer;
+
+        &:hover {
+          @apply bg-[#2430af];
+        }
+      }
+    }
+  }
+  /* Footer */
 }
 
 @layer utilities {
