@@ -21,7 +21,7 @@ const Footer = () => {
   const handleSubmit = () => {
     setLoading(true);
 
-    // Simulate form submission (replace this with actual API request).
+    // Simulate form submission (replace this with actual API request)
     setTimeout(() => {
       setLoading(false);
       setIsFormSubmitted(true);
