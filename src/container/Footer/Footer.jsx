@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
+import { AppWrap, MotionWrap } from "../../wrapper";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
